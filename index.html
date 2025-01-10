@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Modern Shop</h1>
+        <div class="cart">
+            <button id="cart-button">Cart (0)</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="shop-items">
+            <!-- Item Slot 1 -->
+            <div class="item-slot">
+                <img src="https://via.placeholder.com/150" alt="Item 1" />
+                <h3>Item 1</h3>
+                <p>$19.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Item Slot 2 -->
+            <div class="item-slot">
+                <img src="https://via.placeholder.com/150" alt="Item 2" />
+                <h3>Item 2</h3>
+                <p>$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Item Slot 3 -->
+            <div class="item-slot">
+                <img src="https://via.placeholder.com/150" alt="Item 3" />
+                <h3>Item 3</h3>
+                <p>$39.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Live Visitor Count -->
+        <div id="visitor-count">
+            <h3>Live Visitor Count: <span id="visitor-count-value">0</span></h3>
+        </div>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items-list">
+                <!-- Items will be dynamically added here -->
+            </ul>
+            <p id="total-price">Total: $0.00</p>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
